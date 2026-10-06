@@ -1,4 +1,4 @@
-import { Database } from "bun:sqlite";
+import Database from "better-sqlite3";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -10,7 +10,7 @@ const dbPath = join(__dirname, import.meta.env.SQLITE_DB_PATH);
 const db = new Database(dbPath);
 
 export function getClients() {
-  return db.query(`
+  return db.prepare(`
     SELECT
       id,
       name,
