@@ -31,4 +31,3 @@ Application d'exemple en **AstroJS SSR** avec :
 - Lancer l'application (0.5pts)
 - Tester l'application 
 - Concevoir une action GitHub CI/CD pour le déploiement automatique de l'application (4pts)
-
